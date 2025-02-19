@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paiement en ligne</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Payer votre commande</h2>
+  
+  <!-- Formulaire de paiement -->
+  <form id="payment-form">
+    <div id="card-element">
+      <!-- Le champ de carte sera inséré ici par Stripe -->
+    </div>
+    <button type="submit" id="submit">Payer</button>
+  </form>
+
+  <!-- Spinner de chargement -->
+  <div id="loading-spinner" class="spinner"></div>
+
+  <!-- Inclure Stripe.js -->
+  <script src="https://js.stripe.com/v3/"></script>
+  <script src="script.js"></script>
+</body>
+</html>
